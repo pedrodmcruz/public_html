@@ -1,0 +1,22 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pedrodmcruz\.pt$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pedrodmcruz\.pt$
+RewriteRule ^/?$ "https\:\/\/pedrodmcruz\.pt\/index\.html" [R=301,L]
+
+
+# BEGIN WordPress
+# As directivas (linhas) entre "BEGIN WordPress" e "END WordPress" são geradas
+# dinamicamente e não deverão ser modificadas através de filtros do WordPress.
+# Qualquer alteração às instruções entre estes marcadores será sobreposta.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
