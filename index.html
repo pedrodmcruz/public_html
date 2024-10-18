@@ -1,15 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Website Em Manutenção</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="maintenance-container">
-        <h1>Website Em Manutenção</h1>
-        <p>Olá. Estou de momento a desenvolver este website e estará concluído em breve.</p>
-        <p>Obrigado pela sua paciência. PC.</p>
-    </div>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-16"> 
+        <title>PC - A Inspirar Confiança</title>
+        <style>
+            body {
+                text-align: center;
+                color: #292d2d;
+                font: 20px Helvetica, sans-serif;
+                height: 100vh;
+                padding: 20px;
+              background: linear-gradient(180deg, rgba(192,254,223,1) 35%, rgba(0,186,250,1) 100%);
+            }
+            h1 { font-size: 50px; }
+            a { text-decoration: none; }
+            a:hover { text-decoration: underline; }
+            article { 
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                body {
+                  padding: 150px;
+                  background: linear-gradient(90deg, rgba(192,254,223,1) 35%, rgba(0,186,250,1) 100%);
+                }
+                article { width: 650px; }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <article>
+            <h1>Volto em Breve!</h1>
+            <div>
+                <p>Estou a desenvolver o meu site. Se precisares, podes sempre contactar-me através do email <a href="mailto:geral@pedrodmcruz.pt">geral@pedrodmcruz.pt</a>, ou do n° <a href="tel:+351961914775">961 914 775</a>. Estarei de volta online em breve. Um abraço!</p>
+                <p>&mdash; Pedro Cruz - A Inspirar Confiança. &copy; 2024.</p>
+            </div>
+        </article>
+    </body>
 </html>
